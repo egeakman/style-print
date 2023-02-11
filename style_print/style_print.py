@@ -3,7 +3,7 @@ from pprint import pprint
 import printy
 
 
-def style_print(text: str, options: str, disable_gimme: bool = False):
+def style_print(text: str, options: str = "", disable_gimme: bool = False):
     if text == "?gimme" and not disable_gimme:
         pprint({"COLORS": printy.COLORS, "FORMATS": printy.FORMATS})
     else:

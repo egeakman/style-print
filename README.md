@@ -21,6 +21,8 @@ style-print is a utility CLI for formatting and printing text in different style
             entry: style-print "This is a test" "r>UBI{b}"
             language: python
             additional_dependencies: ["style-print"]
+            pass_filenames: false
+            verbose: true
     ```
 
 ## Usage

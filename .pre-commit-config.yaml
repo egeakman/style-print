@@ -2,10 +2,14 @@ repos:
   - repo: local
     hooks:
       - id: style-print
-        name: style-print
+        name: ""
         entry: style-print "Welcome to style-print!" "b>UBI{y}"
         language: python
-        additional_dependencies: ["style-print"]
+        # Don't use "." in your own hooks, use "style-print" instead.
+        # This is only for testing.
+        additional_dependencies: [.]
+        pass_filenames: false
+        verbose: true
 
   - repo: https://github.com/psf/black
     rev: 23.1.0
